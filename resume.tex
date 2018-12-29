@@ -1,0 +1,35 @@
+\documentclass[11pt, oneside, letterpaper, notitlepage]{article}
+
+% Pre-preamble
+\usepackage{geometry} % Allows fancyheader to be given proper page width
+	\geometry{margin=1.2in}
+\usepackage{graphicx}
+	\graphicspath{{img/}}
+
+\usepackage{color}
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0.8pt}
+	\renewcommand{\footrulewidth}{0.8pt}
+
+	\fancyhead[L]{\Huge{jeffreyLeung}}
+	\fancyhead[R]{jleung513@gmail.com}
+	\fancyfoot[C]{\thepage}
+
+\usepackage[defaultsans]{droidsans}
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{textcomp} % Allows the use of \textbullet with the sans-serif font
+\usepackage{verbatim}
+
+\setlength{\headheight}{40pt}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+	\input{./tex/content.tex}
+
+\end{document}
